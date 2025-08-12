@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>School Enrollment Requirements</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    header {
+        background-color: #6b1e3a; /* Maroon color */
+        padding: 20px 0;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+    }
+    h1 {
+        color: #2c3e50;
+        margin-top: 20px;
+    }
+    button {
+        padding: 15px 25px;
+        margin: 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .english-btn {
+        background-color: #3498db;
+        color: white;
+    }
+    .arabic-btn {
+        background-color: #27ae60;
+        color: white;
+    }
+    .requirements {
+        display: none;
+        text-align: left;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    label {
+        cursor: pointer;
+    }
+    .note {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #b30000;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    Heritage International Academy
+</header>
+
+<div class="container">
+    <h1>Select Language / اختر اللغة</h1>
+    <button class="english-btn" onclick="showRequirements('en')">English</button>
+    <button class="arabic-btn" onclick="showRequirements('ar')">العربية</button>
+
+    <!-- English Requirements -->
+    <div id="req-en" class="requirements">
+        <h2>Required Documents for New Student</h2>
+        <ul>
+            <li><label><input type="checkbox"> A Copy of Passport (Child & Parents)</label></li>
+            <li><label><input type="checkbox"> A Copy of Qatari ID Card from Qatari Nationals and Residents (Child & Parents) (Front & Back)</label></li>
+            <li><label><input type="checkbox"> Your Child’s Vaccination Card</label></li>
+            <li><label><input type="checkbox"> A Copy of your child’s birth certificate</label></li>
+            <li><label><input type="checkbox"> To Whom It May Concern (Certificate from the Guardian’s Work Place)</label></li>
+            <li><label><input type="checkbox"> Your Child’s last three (3) End of Year Reports</label></li>
+            <li><label><input type="checkbox"> Grade Six/Nine Certificates</label></li>
+            <li><label><input type="checkbox"> Two Recent Passport Sized Photographs of your Child</label></li>
+            <li><label><input type="checkbox"> Copy of Health Card</label></li>
+            <li><label><input type="checkbox"> Medical Fitness Certificate (Age 6-3 years)</label></li>
+            <li><label><input type="checkbox"> Certificate of Good Behaviour</label></li>
+            <li><label><input type="checkbox"> Blue Board Address / National Address (From Metrash)</label></li>
+        </ul>
+        <div class="note">Note: Failure to provide all required documents will result in the rejection of the registration.</div>
+    </div>
+
+    <!-- Arabic Requirements -->
+    <div id="req-ar" class="requirements" dir="rtl">
+        <h2>المستندات المطلوبة للطالب الجديد</h2>
+        <ul>
+            <li><label><input type="checkbox"> صورة مرفقة من جواز السفر (الأب – الأم – الطالب)</label></li>
+            <li><label><input type="checkbox"> صورة من البطاقة الشخصية (الأب – الأم – الطالب) (من الأمام والخلف)</label></li>
+            <li><label><input type="checkbox"> صورة عن شهادة التطعيم</label></li>
+            <li><label><input type="checkbox"> صورة عن شهادة الميلاد</label></li>
+            <li><label><input type="checkbox"> شهادة لمن يهمه الأمر (من جهة عمل ولي الأمر)</label></li>
+            <li><label><input type="checkbox"> من السنوات الثلاث الأخيرة تقارير نهاية العام للطالب</label></li>
+            <li><label><input type="checkbox"> شهادة الصف السادس / التاسع</label></li>
+            <li><label><input type="checkbox"> صور جواز سفر عدد (2)</label></li>
+            <li><label><input type="checkbox"> صورة عن بطاقة الصحية</label></li>
+            <li><label><input type="checkbox"> شهادة لياقة صحية صادرة عن المركز الصحي (لعمر 3-6 سنوات)</label></li>
+            <li><label><input type="checkbox"> شهادة حسن سير وسلوك</label></li>
+            <li><label><input type="checkbox"> صورة عن اللوحة الزرقاء (رقم المبنى – الشارع – المنطقة)</label></li>
+        </ul>
+        <div class="note">ملاحظة: إن عدم استيفاء المستندات المطلوبة يؤدي إلى عدم التسجيل.</div>
+    </div>
+</div>
+
+<script>
+function showRequirements(lang) {
+    document.getElementById('req-en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('req-ar').style.display = lang === 'ar' ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>
