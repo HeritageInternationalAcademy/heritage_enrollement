@@ -1,34 +1,171 @@
-<!-- Tuition Fees -->
-<div id="fees" class="section">
-    <h2>Tuition Fees & Other Charges (Academic Year 2025/2026)</h2>
-    <table>
-        <tr>
-            <th>Grade</th>
-            <th>Term 1 (QAR)</th>
-            <th>Term 2 (QAR)</th>
-            <th>Term 3 (QAR)</th>
-            <th>Total Tuition (QAR)</th>
-            <th>Registration</th>
-            <th>Uniform</th>
-            <th>Books</th>
-            <th>Exam</th>
-            <th>Total with Extras</th>
-            <th>Reservation</th>
-        </tr>
-        <tr><td>Pre-School</td><td>4,400</td><td>4,300</td><td>4,300</td><td>13,000</td><td>500</td><td>500</td><td>1,500</td><td>-</td><td>15,500</td><td>2,000</td></tr>
-        <tr><td>KG-1</td><td>4,400</td><td>4,300</td><td>4,300</td><td>13,000</td><td>500</td><td>500</td><td>1,500</td><td>-</td><td>15,500</td><td>2,000</td></tr>
-        <tr><td>KG-2</td><td>4,400</td><td>4,300</td><td>4,300</td><td>13,000</td><td>500</td><td>500</td><td>1,500</td><td>-</td><td>15,500</td><td>2,000</td></tr>
-        <tr><td>Grade 1</td><td>5,500</td><td>5,500</td><td>5,500</td><td>16,500</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>19,550</td><td>2,000</td></tr>
-        <tr><td>Grade 2</td><td>6,000</td><td>5,900</td><td>5,900</td><td>17,800</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>20,850</td><td>2,000</td></tr>
-        <tr><td>Grade 3</td><td>6,200</td><td>6,100</td><td>6,100</td><td>18,400</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>21,450</td><td>2,000</td></tr>
-        <tr><td>Grade 4</td><td>6,500</td><td>6,300</td><td>6,300</td><td>19,100</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>22,150</td><td>2,000</td></tr>
-        <tr><td>Grade 5</td><td>6,600</td><td>6,600</td><td>6,600</td><td>19,800</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>22,850</td><td>2,000</td></tr>
-        <tr><td>Grade 6</td><td>7,100</td><td>7,000</td><td>7,000</td><td>21,100</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>24,150</td><td>2,000</td></tr>
-        <tr><td>Grade 7</td><td>7,500</td><td>7,450</td><td>7,450</td><td>22,400</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>26,450</td><td>2,000</td></tr>
-        <tr><td>Grade 8</td><td>7,700</td><td>7,700</td><td>7,700</td><td>23,100</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>27,150</td><td>2,000</td></tr>
-        <tr><td>Grade 9</td><td>7,900</td><td>7,900</td><td>7,900</td><td>23,700</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>27,750</td><td>2,000</td></tr>
-        <tr><td>Grade 10</td><td>8,400</td><td>8,300</td><td>8,300</td><td>25,000</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>29,050</td><td>2,000</td></tr>
-        <tr><td>Grade 11</td><td>8,800</td><td>8,800</td><td>8,800</td><td>26,400</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>30,450</td><td>2,000</td></tr>
-        <tr><td>Grade 12</td><td>9,300</td><td>9,200</td><td>9,200</td><td>27,700</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>31,750</td><td>2,000</td></tr>
-    </table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>School Enrollment Requirements & Fees</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    header {
+        background-color: #6b1e3a;
+        padding: 20px 0;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+    }
+    h1 {
+        color: #2c3e50;
+        margin-top: 20px;
+    }
+    button {
+        padding: 15px 25px;
+        margin: 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .english-btn { background-color: #3498db; color: white; }
+    .arabic-btn { background-color: #27ae60; color: white; }
+    .fees-btn { background-color: #f39c12; color: white; }
+    .section {
+        display: none;
+        text-align: left;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; font-size: 16px; }
+    label { cursor: pointer; }
+    .note {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #b30000;
+        font-weight: bold;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+    th {
+        background-color: #6b1e3a;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<header>Heritage International Academy</header>
+
+<div class="container">
+    <h1>Select Language / اختر اللغة</h1>
+    <button class="english-btn" onclick="showSection('req-en')">English</button>
+    <button class="arabic-btn" onclick="showSection('req-ar')">العربية</button>
+    <button class="fees-btn" onclick="showSection('fees')">Tuition Fees</button>
+
+    <!-- English Requirements -->
+    <div id="req-en" class="section">
+        <h2>Required Documents for New Student</h2>
+        <ul>
+            <li><label><input type="checkbox"> A Copy of Passport (Child & Parents)</label></li>
+            <li><label><input type="checkbox"> A Copy of Qatari ID Card (Child & Parents) (Front & Back)</label></li>
+            <li><label><input type="checkbox"> Your Child’s Vaccination Card</label></li>
+            <li><label><input type="checkbox"> A Copy of your child’s birth certificate</label></li>
+            <li><label><input type="checkbox"> Certificate from Guardian’s Work Place</label></li>
+            <li><label><input type="checkbox"> Last three End of Year Reports</label></li>
+            <li><label><input type="checkbox"> Grade Six/Nine Certificates</label></li>
+            <li><label><input type="checkbox"> Two Recent Passport Photos</label></li>
+            <li><label><input type="checkbox"> Copy of Health Card</label></li>
+            <li><label><input type="checkbox"> Medical Fitness Certificate (Age 3–6)</label></li>
+            <li><label><input type="checkbox"> Certificate of Good Behaviour</label></li>
+            <li><label><input type="checkbox"> Blue Board Address / National Address</label></li>
+        </ul>
+        <div class="note">Note: Failure to provide all required documents will result in rejection of registration.</div>
+    </div>
+
+    <!-- Arabic Requirements -->
+    <div id="req-ar" class="section" dir="rtl">
+        <h2>المستندات المطلوبة للطالب الجديد</h2>
+        <ul>
+            <li><label><input type="checkbox"> صورة من جواز السفر (الأب – الأم – الطالب)</label></li>
+            <li><label><input type="checkbox"> صورة من البطاقة الشخصية (الأب – الأم – الطالب) (من الأمام والخلف)</label></li>
+            <li><label><input type="checkbox"> شهادة التطعيم</label></li>
+            <li><label><input type="checkbox"> شهادة الميلاد</label></li>
+            <li><label><input type="checkbox"> شهادة لمن يهمه الأمر (من جهة عمل ولي الأمر)</label></li>
+            <li><label><input type="checkbox"> آخر ثلاث شهادات دراسية</label></li>
+            <li><label><input type="checkbox"> شهادة الصف السادس / التاسع</label></li>
+            <li><label><input type="checkbox"> صورتان شخصيتان حديثتان</label></li>
+            <li><label><input type="checkbox"> البطاقة الصحية</label></li>
+            <li><label><input type="checkbox"> شهادة لياقة صحية (لعمر 3-6 سنوات)</label></li>
+            <li><label><input type="checkbox"> شهادة حسن سير وسلوك</label></li>
+            <li><label><input type="checkbox"> العنوان الوطني (اللوحة الزرقاء)</label></li>
+        </ul>
+        <div class="note">ملاحظة: إن عدم استيفاء المستندات المطلوبة يؤدي إلى عدم التسجيل.</div>
+    </div>
+
+    <!-- Tuition Fees -->
+    <div id="fees" class="section">
+        <h2>Tuition Fees & Other Charges – Academic Year 2025/2026</h2>
+        <table>
+            <tr>
+                <th>Grade</th>
+                <th>Term 1</th>
+                <th>Term 2</th>
+                <th>Term 3</th>
+                <th>Total Fees</th>
+                <th>Registration</th>
+                <th>Uniform</th>
+                <th>Books</th>
+                <th>Exam</th>
+                <th>Total</th>
+                <th>Reservation</th>
+            </tr>
+            <tr><td>Pre-School</td><td>4,400</td><td>4,300</td><td>4,300</td><td>13,000</td><td>500</td><td>500</td><td>1,500</td><td>-</td><td>15,500</td><td>2,000</td></tr>
+            <tr><td>KG-1</td><td>4,400</td><td>4,300</td><td>4,300</td><td>13,000</td><td>500</td><td>500</td><td>1,500</td><td>-</td><td>15,500</td><td>2,000</td></tr>
+            <tr><td>KG-2</td><td>4,400</td><td>4,300</td><td>4,300</td><td>13,000</td><td>500</td><td>500</td><td>1,500</td><td>-</td><td>15,500</td><td>2,000</td></tr>
+            <tr><td>Grade 1</td><td>5,500</td><td>5,500</td><td>5,500</td><td>16,500</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>19,550</td><td>2,000</td></tr>
+            <tr><td>Grade 2</td><td>6,000</td><td>5,900</td><td>5,900</td><td>17,800</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>20,850</td><td>2,000</td></tr>
+            <tr><td>Grade 3</td><td>6,200</td><td>6,100</td><td>6,100</td><td>18,400</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>21,450</td><td>2,000</td></tr>
+            <tr><td>Grade 4</td><td>6,500</td><td>6,300</td><td>6,300</td><td>19,100</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>22,150</td><td>2,000</td></tr>
+            <tr><td>Grade 5</td><td>6,600</td><td>6,600</td><td>6,600</td><td>19,800</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>22,850</td><td>2,000</td></tr>
+            <tr><td>Grade 6</td><td>7,100</td><td>7,000</td><td>7,000</td><td>21,100</td><td>500</td><td>800</td><td>1,500</td><td>250</td><td>24,150</td><td>2,000</td></tr>
+            <tr><td>Grade 7</td><td>7,500</td><td>7,450</td><td>7,450</td><td>22,400</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>26,450</td><td>2,000</td></tr>
+            <tr><td>Grade 8</td><td>7,700</td><td>7,700</td><td>7,700</td><td>23,100</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>27,150</td><td>2,000</td></tr>
+            <tr><td>Grade 9</td><td>7,900</td><td>7,900</td><td>7,900</td><td>23,700</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>27,750</td><td>2,000</td></tr>
+            <tr><td>Grade 10</td><td>8,400</td><td>8,300</td><td>8,300</td><td>25,000</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>29,050</td><td>2,000</td></tr>
+            <tr><td>Grade 11</td><td>8,800</td><td>8,800</td><td>8,800</td><td>26,400</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>30,450</td><td>2,000</td></tr>
+            <tr><td>Grade 12</td><td>9,300</td><td>9,200</td><td>9,200</td><td>27,700</td><td>500</td><td>800</td><td>2,500</td><td>250</td><td>31,750</td><td>2,000</td></tr>
+        </table>
+    </div>
 </div>
+
+<script>
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
